@@ -1,13 +1,8 @@
-@font-face {
-    font-family: 'ProductSans-LightItalic', 'Gotham-Black';
-    src: url('/icons/Fonts/Gotham-Black.otf') format('otf'), url('/icons/Fonts/ProductSans-LightItalic.ttf') format('ttf');
-}
-
 html {
     height: 100%;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     overflow: hidden;
-    font-family: sans-serif, 'ProductSans-LightItalic';
+    font-family: sans-serif;
 }
 
 #stars {
@@ -71,62 +66,4 @@ html {
     to {
         transform: translateY(-2000px);
     }
-}
-
-.content {
-    text-align: center;
-}
-
-.content h1 {
-    font-size: 80px;
-    color: white;
-    font-weight: 600;
-    transition: 1s;
-    transition-timing-function: cubic-bezier(0.05, -0.01, 0, 0.96);
-}
-
-.content h1:hover {
-    -webkit-text-stroke: 1px white;
-    color: transparent;
-}
-
-.content a {
-    text-decoration: none;
-    display: inline-block;
-    color: #ffffff;
-    font-size: 24px;
-    border: 2px solid white;
-    padding: 14px 70px;
-    border-radius: 50px;
-    margin-top: 40px;
-}
-
-.back-video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-@media (min-aspect-ratio: 16/9) {
-    .back-video {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9) {
-    .back-video {
-        width: auto;
-        height: 100%;
-    }
-}
-
-.btn-1 {
-    transition: 0.4s cubic-bezier(0, 0, 0.22, 0.99);
-    background-image: -moz-linear-gradient(#fffffff #0000);
-}
-
-.btn-1:hover {
-    box-shadow: 0 0 12px 0 white;
 }
